@@ -9,8 +9,18 @@
           
             <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-            <script src="js/cookie-agreement.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+            $(document).ready(function(){   
+                setTimeout(function () {
+                    $("#cookieConsent").fadeIn(200);
+                 }, 4000);
+                $("#closeCookieConsent, .cookieConsentOK").click(function() {
+                    $("#cookieConsent").fadeOut(200);
+                }); 
+            });
+</script>
 </head>
 <body class="index"> 
     <div class="container"> <!--container-->
@@ -19,20 +29,21 @@
         </div>              <!--end parent-->
     </div>  <!--end container-->
 
-<div class="cookie-banner" style="display: none">
-    <p>We respect your privacy. We use cookies to improve your performance! Your information will be saved. It is so beautifully arranged in your browser that you know someone's finger have been all over it. <br><a href=’insert link’>-Julia</a></p>
-    <button class="close">&times;</button>
-</div>
 
+
+
+    <div id="cookieConsent">
+        <div id="closeCookieConsent">x</div>
+        We respect your privacy. We use cookies to improve your performance! Your information will be saved. <br>
+        It is so beautifully arranged in your browser that you know someone's finger have been all over it.<br> -Julia <br><a class="cookieConsentOK">That's Fine</a>
+    </div>
 
 
 <script>
     function myFunction() {
       window.open("1.html", "_self") ;
     }
-    </script>
-<script src="js/cookie-agreement.js"></script>
-
+</script>
 
 </body>
 </html>
