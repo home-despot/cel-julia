@@ -9,16 +9,14 @@
           
             <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-            <script src="js/cookie-agreement.js"></script>
 
 </head>
 <body class="questions"> 
     <div class="container"> <!--container-->
-        <div class="signage"><img src="images/signage.png"> <!--parent--><br>
+        <div class="signage"><!--parent--><br>
                <p>How is your love life related to your mother?<br>
             <form>
-                <input type="text" id="mother?" name="mother?" value="limit 5000 characters" input style="height:50px;width:80%" .....><br>
-
+                <textarea class="userInput" placeholder="Limit 5000 characters"></textarea>
                 <input type="radio" id="idk" name="mother?" value="idk">
                 <label for="idk">I don't know</label><br>         
                 <input type="radio" id="idw" name="mother?" value="idw">
@@ -26,7 +24,7 @@
             </form>
             </p>
 
-            <button onclick="myFunction()">Enter</button> 
+            <button onclick="myFunction()">OK</button> 
         </div>              <!--end parent-->
     </div>  <!--end container-->
 
@@ -35,7 +33,7 @@
     function myFunction() {
       window.open("22.html", "_self") ;
     }
-    </script>
+</script>
 
 </body>
 </html>
