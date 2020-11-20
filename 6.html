@@ -9,42 +9,47 @@
           
             <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-            <script src="js/cookie-agreement.js"></script>
 
 </head>
 <body class="questions"> 
     <div class="container"> <!--container-->
-        <div class="signage"><img src="images/signage.png"> <!--parent--><br>
+        <div class="signage"> <!--parent--><br>
                <p>Which pill do you choose?
             <form>
+                <div id="option">
                 <input type="radio" id="x-ray-vision" name="fname" value="x-ray-vision">
-                <label for="x-ray-vision">x-ray vision<img src="img---"/></label><br>
+                <label for="x-ray-vision">X-Ray vision</label><br>
 
                 <input type="radio" id="teleport" name="fname" value="teleport">
-                <label for="teleport">teleport<img src="img---"/></label><br>
-
-                <input type="radio" id="batteries" name="fname" value="batteries">
-                <label for="batteries">batteries <img src="img---"/></label><br>
+                <label for="teleport">Teleport</label><br>
 
                 <input type="radio" id="read-minds" name="fname" value="read-minds">
-                <label for="read-minds">read minds <img src="img---"/></label><br>
+                <label for="read-minds">Read minds </label><br>
 
                 <input type="radio" id="invisibility" name="fname" value="invisibility">
-                <label for="invisibility">invisibility <img src="img---"/></label><br>
+                <label for="invisibility">Invisibility </label><br>
 
                 <input type="radio" id="no-pill" name="fname" value="no-pill">
-                <label for="no-pill">no pill <img src="img---"/></label><br>
-                 <br>
-                 
-             </form>
-               
+                <label for="no-pill">No pill </label><br>
+                <br>
+                
+                </div>            
                 
             </form>
             </p>
 
-            <button onclick="myFunction()">Enter</button> 
+            <button onclick="myFunction()">OK</button> 
         </div>              <!--end parent-->
     </div>  <!--end container-->
+    <div class="examples">
+        <ul>
+        <li>[a]<img src="images/xray.png" /> </li>
+        <li>[b]<img src="images/teleport.png" /> </li>
+        <li>[c]<img src="images/invisibility.png" />  </li> 
+        <li>[d]<img src="images/read-minds.png" />  </li>  
+        <li>[e]<img src="images/no-pill.jpg" /></li>
+        </ul>
+    </div>
 
 
 <script>
