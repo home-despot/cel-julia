@@ -10,51 +10,32 @@
             <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-            $(document).ready(function(){   
-                setTimeout(function () {
-                    $("#cookieJulia").fadeIn(200);
-                 }, 3000);
-                $("#closeCookieJulia, .cookieJuliaOK").click(function() {
-                    $("#cookieJulia").fadeOut(200);
-                }); 
-            }); 
-</script>
 
 </head>
 <body class="questions"> 
     <div class="container"> <!--container-->
-        <div class="signage"><img src="images/signage.png"> <!--parent--><br>
+        <div class="signage"><!--parent--><br>
                <p>Are you? <br>
             <form>
                 <input type="radio" id="-seeking" name="risk" value="-seeking">
-                <label for="-seeking">risk-seeking</label><br>
+                <label for="-seeking">Risk-seeking</label><br>
                 <input type="radio" id="-acceptant" name="risk" value="-acceptant">
-                <label for="-acceptant">risk-acceptant</label><br>
+                <label for="-acceptant">Risk-acceptant</label><br>
                 <input type="radio" id="-neutral" name="risk" value="-neutral">
-                <label for="-neutral">risk-neutral</label><br>
+                <label for="-neutral">Risk-neutral</label><br>
                 <input type="radio" id="-avoidant" name="risk" value="-avoidant">
-                <label for="-avoidant">risk-avoidant</label><br>
+                <label for="-avoidant">Risk-avoidant</label><br>
                 <input type="radio" id="=-averse" name="risk" value="=-averse">
-                <label for="=-averse">risk-averse</label><br>
+                <label for="=-averse">Risk-averse</label><br>
             </form>
             </p>
 
-            <button onclick="myFunction()">Enter</button> 
+            <button onclick="myFunction()">OK</button> 
         </div>              <!--end parent-->
     </div>  <!--end container-->
 
 
-    <div id="cookieJulia">
-       <img src="images/security-by-julia.png">
-       <h2>WEB SHOP &trade;</h2>
-       <img src="images/1.jpg">
-       <img src="images/5.jpg">
-       <img src="images/3.jpg">
-       <img src="images/4.jpg"><br>
-       <a class="cookieJuliaOK">OK</a>
-    </div>
+
 
 
 <script>
