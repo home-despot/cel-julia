@@ -9,29 +9,26 @@
           
             <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-            <script src="js/cookie-agreement.js"></script>
+<script>
 
+window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.2;
+  audio.play();
+});
+
+
+</script>
 </head>
 <body class="questions"> 
     <div class="container"> <!--container-->
-        <div class="signage"><img src="images/signage.png"> <!--parent--><br>
-               <p>Please enter your email address to receive your results and registration link:
-                <br>
-            <form>
-                <input type="text" id="email?" name="email?"><br>      
-            </form>
-            </p>
+        <div class="signage"><!--parent--><br>
 
-            <button onclick="myFunction()">submit</button> 
-        </div>              <!--end parent-->
-    </div>  <!--end container-->
+<form action="mail.php" method="POST">
+<p>Name</p> <input type="text" name="name">
+<p>Email</p> <input type="text" name="email"><br>
+<input type="submit" value="Send">
+</form>
 
-<!--
-<script> 
-    function myFunction() {
-      window.open("22.html", "_self") ;
-    }
-    </script>
--->
 </body>
 </html>
