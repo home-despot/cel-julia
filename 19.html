@@ -9,30 +9,38 @@
           
             <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-            <script src="js/cookie-agreement.js"></script>
 
 </head>
 <body class="questions"> 
     <div class="container"> <!--container-->
-        <div class="signage"><img src="images/signage.png"> <!--parent--><br>
+        <div class="signage"><!--parent--><br>
                <p>Which of the following corresponds to your memories of your childhood home:
-            <form>                 
+            <form>   
+                <div id="option">
+              
                 <input type="radio" id="cotton" name="home" value="cotton">
-                 <label for="cotton">cotton<img src="img---"/></label><br>
+                 <label for="cotton">Cotton</label><br>
 
                  <input type="radio" id="cage" name="home" value="cage">
-                 <label for="cage">cage<img src="img---"/></label><br>
+                 <label for="cage">Cage</label><br>
 
                  <input type="radio" id="sun" name="home" value="sun">
-                 <label for="sun">sun<img src="img---"/></label><br>
-                                
+                 <label for="sun">Sun</label><br>
+                                </div>
+                             
             </form>
             </p>
 
-            <button onclick="myFunction()">Enter</button> 
+            <button onclick="myFunction()">OK</button> 
         </div>              <!--end parent-->
     </div>  <!--end container-->
-
+<div class="examples">
+    <ul>
+    <li>[a]<img src="images/cotton.jpg"/></li>
+    <li>[b]<img src="images/cage.png"/></li>
+    <li>[c]<img src="images/sun.jpg"/></li>
+    </ul>
+</div>
 
 <script>
     function myFunction() {
