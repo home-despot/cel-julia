@@ -10,26 +10,46 @@
             <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <script src="js/cookie-agreement.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+            $(document).ready(function(){   
+                setTimeout(function () {
+                    $("#cookieJulia").fadeIn(200);
+                 }, 1000);
+                $("#closeCookieJulia, .cookieJuliaOK").click(function() {
+                    $("#cookieJulia").fadeOut(200);
+                }); 
+            }); 
+</script>
 </head>
 <body class="questions"> 
     <div class="container"> <!--container-->
-        <div class="signage"><img src="images/signage.png"> <!--parent--><br>
+        <div class="signage"> <!--parent--><br>
                <p>Have you ever met anyone in person that you initially met online?
                 <br>
             <form>
                 <input type="radio" id="yes" name="online" value="yes">
-                <label for="yes">yes</label><br>
+                <label for="yes">Yes</label><br>
                 <input type="radio" id="no" name="online" value="no">
-                <label for="no">no</label><br>
+                <label for="no">No</label><br>
                  <br>
             </form>
             </p>
 
-            <button onclick="myFunction()">Enter</button> 
+            <button onclick="myFunction()">OK</button> 
         </div>              <!--end parent-->
     </div>  <!--end container-->
 
+
+    <div class="container" id="cookieJulia">
+        Security by Julia Featured Product<br>
+        <!--<img src="images/1.jpg">
+        <img src="images/5.jpg">
+        <img src="images/3.jpg">-->
+        <img src="images/4.jpg"><br>
+        <div class="cookieJuliaOK-2">Do Not Sell My Personal Information</div>
+        <a class="cookieJuliaOK">OK</a>
+     </div>
 
 <script>
     function myFunction() {
