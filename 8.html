@@ -9,16 +9,27 @@
           
             <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-            <script src="js/cookie-agreement.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+            $(document).ready(function(){   
+                setTimeout(function () {
+                    $("#cookieJulia").fadeIn(200);
+                 }, 1000);
+                $("#closeCookieJulia, .cookieJuliaOK").click(function() {
+                    $("#cookieJulia").fadeOut(200);
+                }); 
+            }); 
+</script>
 
 </head>
 <body class="questions"> 
     <div class="container"> <!--container-->
-        <div class="signage"><img src="images/signage.png"> <!--parent--><br>
+        <div class="signage"><!--parent--><br>
                <p>Have you ever surfed the internet anonymously using a web proxy?
             <form>
                 <input type="radio" id="always" name="fname" value="always">
-                <label for="always">always. you can never be too safe</label><br>
+                <label for="always">Always. You can never be too safe</label><br>
 
                 <input type="radio" id="if" name="fname" value="if">
                 <label for="if">Only if I am doing something shady</label><br>
@@ -27,23 +38,27 @@
                 <label for="what">What's a web proxy?</label><br>
                  
                  <br>
-                 
              </form>
-               
-                
-            </form>
             </p>
 
-            <button onclick="myFunction()">Enter</button> 
+            <button onclick="myFunction()">OK</button> 
         </div>              <!--end parent-->
     </div>  <!--end container-->
-
+    <div class="container" id="cookieJulia">
+        Discover Security by Julia products selected for you<br>
+       <img src="images/1.jpg">
+       <!--<img src="images/5.jpg">
+       <img src="images/3.jpg">
+       <img src="images/4.jpg"><br>-->
+       <a class="cookieJuliaOK">OK</a><br>
+       <div class="cookieJuliaOK-2">Do Not Sell My Personal Information</div>
+    </div>
 
 <script>
     function myFunction() {
       window.open("9.html", "_self") ;
     }
-    </script>
+</script>
 
 </body>
 </html>
