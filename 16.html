@@ -10,24 +10,40 @@
             <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <script src="js/cookie-agreement.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+            $(document).ready(function(){   
+                setTimeout(function () {
+                    $("#cookieJulia").fadeIn(200);
+                 }, 1000);
+                $("#closeCookieJulia, .cookieJuliaOK").click(function() {
+                    $("#cookieJulia").fadeOut(200);
+                }); 
+            }); 
+</script>
 </head>
 <body class="questions"> 
     <div class="container"> <!--container-->
-        <div class="signage"><img src="images/signage.png"> <!--parent--><br>
+        <div class="signage"><!--parent--><br>
                <p>Why have you chosen this nice outfit today?
                 <br>
             <form>
                 <input type="text" id="fname" name="fname" value=" "><br>
-            
-                 <br>
             </form>
             </p>
 
-            <button onclick="myFunction()">Enter</button> 
+            <button onclick="myFunction()">OK</button> 
         </div>              <!--end parent-->
     </div>  <!--end container-->
-
+    <div class="container" id="cookieJulia">
+        Discover Security by Julia products selected for you<br>
+        <!--<img src="images/1.jpg">
+        <img src="images/5.jpg">-->
+        <img src="images/3.jpg">
+        <!--<img src="images/4.jpg"><br>-->
+        <div class="cookieJuliaOK-2">Do Not Sell My Personal Information</div>
+        <a class="cookieJuliaOK">OK</a>
+     </div>
 
 <script>
     function myFunction() {
