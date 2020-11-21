@@ -142,10 +142,10 @@ input {
 
 }
 
-input[type=text] {
+input[type=text], input[type=submit], input[type=email] {
     width: 80%;
     padding: 5px;
-    margin: 5px;    
+    margin: 0 auto;
     border-radius: 4px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -193,9 +193,9 @@ button:active, .button:active {
 
 
 #cookieConsent {                               /*cookie consent pop up*/
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255);
     min-height: 26px;
-    font-size: 16px;
+    font-size: 12px;
     color: rgb(0, 0, 0);
     line-height: 26px;
     padding: 8px 0 8px 30px;
@@ -375,11 +375,8 @@ body{
 }
 
 .examples{
-    width: 70%;
     float: center;
-    margin: 0px auto;
-    position: relative;
-    text-align: center;
+    display:block;
 
 }
 
@@ -389,6 +386,8 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    display:block;
+
 
 }
 
